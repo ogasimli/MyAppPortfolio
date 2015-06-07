@@ -1,5 +1,6 @@
 package org.ogasimli.myappportfolio;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
@@ -18,38 +19,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onClick(View v) {
-        Button buttonAppOne = (Button) findViewById(R.id.buttonAppOne);
-        Button buttonAppTwo = (Button) findViewById(R.id.buttonAppTwo);
-        Button buttonAppThree = (Button) findViewById(R.id.buttonAppThree);
-        Button buttonAppFour = (Button) findViewById(R.id.buttonAppFour);
-        Button buttonAppFive = (Button) findViewById(R.id.buttonAppFive);
-        Button buttonAppSix = (Button) findViewById(R.id.buttonAppSix);
-        CharSequence text = null;
-        switch (v.getId()) {
-            case R.id.buttonAppOne:
-                text=buttonAppOne.getText();
-                break;
-            case R.id.buttonAppTwo:
-                text=buttonAppTwo.getText();
-                break;
-            case R.id.buttonAppThree:
-                text=buttonAppThree.getText();
-                break;
-            case R.id.buttonAppFour:
-                text=buttonAppFour.getText();
-                break;
-            case R.id.buttonAppFive:
-                text=buttonAppFive.getText();
-                break;
-            case R.id.buttonAppSix:
-                text=buttonAppSix.getText();
-                break;
-            default:
-                break;
-        }
-        Toast toast = Toast.makeText(getApplicationContext(),
-                "This button will launch "+ text +"!", Toast.LENGTH_SHORT);
+    public void displayToast(View view) {
+        Button button = (Button) view;
+        String buttonText = (String) button.getText();
+        Context context = getApplicationContext();
+        CharSequence text = getString(R.string.openApp)+buttonText;
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
         toast.setGravity(Gravity.BOTTOM| Gravity.CENTER, 0, 10);
         toast.show();
     }

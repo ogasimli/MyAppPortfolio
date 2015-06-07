@@ -9,4 +9,5 @@
     <string name="fourthApp">BUILD IT BIGGER</string>
     <string name="fifthApp">XYZ READER</string>
     <string name="sixthApp">CAPSTONE: MY OWN APP</string>
+    <string name="openApp">This button will launch </string>
 </resources>

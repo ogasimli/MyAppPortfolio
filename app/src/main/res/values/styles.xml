@@ -12,7 +12,7 @@
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:background">#3F51B5</item>
         <item name="android:textColor">#ffffff</item>
-        <item name="android:onClick">onClick</item>
+        <item name="android:onClick">displayToast</item>
     </style>
 
 </resources>
