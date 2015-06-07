@@ -49,6 +49,6 @@
         style="@style/ButtonStyle"
         android:text="@string/sixthApp"
         android:id="@+id/buttonAppSix"
-        android:background="#D81B60"
+        android:background="@color/buttonRed"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>

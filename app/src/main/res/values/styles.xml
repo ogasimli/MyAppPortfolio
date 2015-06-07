@@ -10,8 +10,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">5dp</item>
         <item name="android:layout_marginTop">5dp</item>
-        <item name="android:background">#3F51B5</item>
-        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@color/buttonBlue</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:onClick">displayToast</item>
     </style>
 
