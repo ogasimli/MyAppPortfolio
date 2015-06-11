@@ -3,11 +3,11 @@
 
     <string name="title">My Nanodegree Apps!</string>
     <string name="action_settings">Settings</string>
-    <string name="firstApp">Spotify Streamer</string>
-    <string name="secondApp">Scores App</string>
-    <string name="thirdApp">Library App</string>
-    <string name="fourthApp">Build It Bigger</string>
-    <string name="fifthApp">XYZ Reader</string>
-    <string name="sixthApp">Capstone: My Own App</string>
+    <string name="firstApp">SPOTIFY STREAMER</string>
+    <string name="secondApp">SCORES APP</string>
+    <string name="thirdApp">LIBRARY APP</string>
+    <string name="fourthApp">BUILD IT BIGGER</string>
+    <string name="fifthApp">XYZ READER</string>
+    <string name="sixthApp">CAPSTONE: MY OWN APP</string>
     <string name="openApp">This button will launch&#160;</string>
 </resources>

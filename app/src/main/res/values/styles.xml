@@ -2,9 +2,7 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/buttonBlue</item>
-        <item name="colorPrimaryDark">@color/darkBlue</item>
-        <item name="colorAccent">@color/buttonRed</item>
+        <!-- Customize your theme here. -->
     </style>
 
     <style name="ButtonStyle">
