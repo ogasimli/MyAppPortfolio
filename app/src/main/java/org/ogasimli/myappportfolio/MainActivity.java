@@ -3,6 +3,7 @@ package org.ogasimli.myappportfolio;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +22,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayToast(View view) {
+        if (toast!=null) {
+            toast.cancel();
+        }
+
         Button button = (Button) view;
         String buttonText = (String) button.getText();
         Context context = getApplicationContext();
         CharSequence text = getString(R.string.openApp)+buttonText+"!";
         int duration = Toast.LENGTH_SHORT;
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.setGravity(Gravity.BOTTOM| Gravity.CENTER, 0, 10);
+        toast = Toast.makeText(context, text, duration);
+        toast.setGravity(Gravity.BOTTOM | Gravity.CENTER, 0, 10);
         toast.show();
     }
 
